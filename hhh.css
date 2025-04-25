@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(120deg, #0f2027, #203a43, #2c5364);
+    color: white;
+  }
+  
+  header {
+    text-align: center;
+    padding: 80px 20px 40px;
+    background: rgba(51, 67, 207, 0.2);
+  }
+  
+  header h1 {
+    font-size: 48px;
+    color: #00ffe1;
+    margin-bottom: 10px;
+    animation: fadeInDown 1s ease;
+  }
+  
+  header p {
+    font-size: 20px;
+    color: #d0fdfd;
+    animation: fadeInUp 1s ease;
+  }
+  
+  .cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 50px 20px;
+  }
+  
+  .card {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 15px;
+    padding: 30px;
+    width: 280px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    transition: transform 0.3s;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #0f2027;
+    color: #999;
+  }
+  
+  /* Анимации */
+  @keyframes fadeInDown {
+    from {opacity: 0; transform: translateY(-20px);}
+    to {opacity: 1; transform: translateY(0);}
+  }
+  
+  @keyframes fadeInUp {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
+  }
